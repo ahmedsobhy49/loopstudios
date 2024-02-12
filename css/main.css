@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+  #mobile-header {
+    background-image: url(../src/mobile/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+#desktop-header {
+  background-image: url(../src/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#hover:hover #display {
+  transform: scale(1.1);
+  transition: all 500ms;
+}
+#hover:hover span {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  color: black;
+  transition: all 500ms;
+}
+
+footer ul:nth-child(2) li:hover {
+  box-shadow: 0 1px 0 0 white;
+}

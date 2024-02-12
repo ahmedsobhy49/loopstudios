@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>loopstudios</title>
+  </head>
+  <body>
+    <!-- mobile header -->
+    <header id="mobile-header" class="md:hidden mb-20">
+      <nav>
+        <!--mobile nav  -->
+        <div
+          id="mobile-nav"
+          class="bg-black absolute top-0 left-0 right-0 h-screen flex flex-col justify-start hidden md:hidden"
+        >
+          <!-- nav logo -->
+          <div class="p-10 w-screen flex justify-between items-center">
+            <img src="./src/logo.svg" alt="logo" class="w-40" />
+            <img
+              id="close-icon"
+              src="./src/icon-close.svg"
+              alt="close icon"
+              class="cursor-pointer w-5 h-5"
+            />
+          </div>
+          <!-- nav links -->
+          <ul class="text-white text-xl flex flex-col gap-4 ps-10 py-20">
+            <li>
+              <a href="#" class="hover:text-red-500 duration-300">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500 duration-300">CAREERS</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500 duration-300">EVENTS</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500 duration-300">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-red-500 duration-300">SUPPORT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- mobile main -->
+      <main id="mobile-main" class="pb-56">
+        <!-- logo -->
+        <div class="flex justify-between items-center p-5">
+          <img src="./src/logo.svg" alt="logo" />
+          <img
+            id="show-menu"
+            src="./src/icon-hamburger.svg"
+            alt="show menu icon"
+            class="cursor-pointer w-5 h-5"
+          />
+        </div>
+        <div class="mt-52 w-11/12 mx-auto sm:w-7/12 sm:mx-5">
+          <h2
+            class="text-4xl text-white font-semibold p-5 pe-26 border-4 sm:pe-26"
+          >
+            IMPRESSIVE <br />
+            EXPERIENCES THAT <br />
+            DELIVER
+          </h2>
+        </div>
+      </main>
+    </header>
+    <!-- desktop header -->
+    <header id="desktop-header" class="hidden md:block mb-20">
+      <!-- desktop nav -->
+      <nav class="flex justify-between px-5 py-10 lg:px-10 xl:px-20">
+        <!-- nav logo -->
+        <div>
+          <img src="./src/logo.svg" alt="" />
+        </div>
+        <!-- nav links -->
+        <ul class="flex gap-5 text-lg text-white lg:gap-8 font-semibold">
+          <li><a href="#" class="py-1 hover:border-b">ABOUT</a></li>
+          <li>
+            <a href="#" class="py-1 hover:border-b">CAREERS</a>
+          </li>
+          <li><a href="#" class="py-1 hover:border-b">EVENTS</a></li>
+          <li><a href="#" class="py-1 hover:border-b">PRODUCTS</a></li>
+          <li><a href="#" class="py-1 hover:border-b">SUPPORT</a></li>
+        </ul>
+      </nav>
+      <!-- desktop main -->
+      <main class="py-40 lg:py-36">
+        <h1
+          class="text-4xl lg:text-5xl font-semibold text-white w-6/12 xl:w-5/12 m-5 lg:mx-10 xl:mx-20 border-4 p-10 xl:pe-40"
+        >
+          IMPRESSIVE EXPERIENCES THAT DELIVER
+        </h1>
+      </main>
+    </header>
+    <!-- Feature Section -->
+    <section id="feature">
+      <!-- Feature Container -->
+      <div class="relative max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+        <!-- Image -->
+        <img
+          src="./src/desktop/image-interactive.jpg"
+          alt="image-interactive"
+        />
+
+        <!-- Text Container -->
+        <div
+          class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20 text-center"
+        >
+          <h2
+            class="md:max-w-lg mt-10 mb-6 font-sans text-4xl text-gray-700 uppercase md:text-5xl md:mt-0 md:text-left"
+          >
+            The leader in interactive VR
+          </h2>
+
+          <p class="md:max-w-md md:text-left text-gray-400">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-32">
+      <div
+        class="w-11/12 md:w-10/12 lg:w-9/12 mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 md:gap-3 xl:gap-8 md:justify-around"
+      >
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-deep-earth.jpg"
+            alt="deep-earth"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-deep-earth.jpg"
+            alt="deep-earth"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >DEEP EARTH</span
+            >
+          </div>
+        </div>
+
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-night-arcade.jpg"
+            alt="night-arcade"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-night-arcade.jpg"
+            alt="night-arcade"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >NIGHT ARCADE</span
+            >
+          </div>
+        </div>
+
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-soccer-team.jpg"
+            alt="soccer-team"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-soccer-team.jpg"
+            alt="soccer-team"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >SOCCER TRAM</span
+            >
+          </div>
+        </div>
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-grid.jpg"
+            alt="image-grid"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-grid.jpg"
+            alt="image-grid"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >THE GRID</span
+            >
+          </div>
+        </div>
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-from-above.jpg"
+            alt="from-above"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-from-above.jpg"
+            alt="from-above"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >FROM UP ABOVE VR</span
+            >
+          </div>
+        </div>
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-pocket-borealis.jpg"
+            alt="pocket-borealis"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-pocket-borealis.jpg"
+            alt="pocket-borealis"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >POCKET BOREALIS</span
+            >
+          </div>
+        </div>
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-curiosity.jpg"
+            alt="curiosity"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-curiosity.jpg"
+            alt="curiosity"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >THE CURIOSITY</span
+            >
+          </div>
+        </div>
+        <div id="hover" class="relative bg-slate-50 w-fit overflow-hidden">
+          <img
+            src="./src/mobile/image-fisheye.jpg"
+            alt="fisheye"
+            class="md:hidden"
+          />
+          <img
+            src="./src/desktop/image-fisheye.jpg"
+            alt="curiosity"
+            class="hidden md:block"
+          />
+          <div
+            id="display"
+            class="absolute top-0 bottom-0 left-0 right-0 z-10 flex items-end hover:bg-white hover:bg-opacity-70"
+          >
+            <span class="text-white text-2xl tracking-wide p-3 font-thin"
+              >MAKE IT FISHEYE</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- the main footer -->
+    <footer class="bg-black pb-20 pt-14 md:pb-5 md:ps-14 lg:ps-24 xl:ps-40">
+      <div>
+        <div class="w-fit mx-auto mb-10 md:ms-0">
+          <img src="./src/logo.svg" alt="logo" />
+        </div>
+        <ul
+          class="text-white text-xl flex flex-col items-center gap-5 mb-10 md:flex-row md:mb-8 md:gap-8"
+        >
+          <li class="pb-1 duration-300">
+            <a href="#">About</a>
+          </li>
+          <li class="pb-1 duration-300"><a href="#">Careers</a></li>
+          <li class="pb-1 duration-300"><a href="#">Events</a></li>
+          <li class="pb-1 duration-300"><a href="#">Products</a></li>
+          <li class="pb-1 duration-300"><a href="#">Support</a></li>
+        </ul>
+        <ul
+          class="flex justify-center items-center gap-3 mb-10 md:justify-start md:mb-20 md:gap-5"
+        >
+          <li>
+            <a href="#"
+              ><img src="./src/icon-facebook.svg" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./src/icon-twitter.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./src/icon-pinterest.svg" alt="icon-pinterest"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./src/icon-instagram.svg" alt="icon-instagram"
+            /></a>
+          </li>
+        </ul>
+        <span class="text-gray-500 block text-center md:text-left"
+          >© 2022 Loopstudios. All Rights Reserved</span
+        >
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
